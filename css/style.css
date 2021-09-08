@@ -272,7 +272,7 @@ nav ul li a{
 }
 
 .selected-work-img{
-    height: 28.125rem;
+    max-height: 28.125rem;
     max-width: 36.5rem;
     display: flex;
     flex-direction: column;
@@ -289,8 +289,6 @@ nav ul li a{
     font-weight: 500;
     letter-spacing: 0em;
     text-align: left;
-
-
 }
 
 .project-description{
@@ -347,7 +345,7 @@ nav ul li a{
 .skills ul{
     display: flex;
     flex-direction: row;
-    width: 700px;
+    min-width: 43.75rem;
     justify-content: space-between;
 }
 
@@ -488,6 +486,14 @@ footer .social-links{
     display: flex;
 }
 
+.arrow-up{
+    top: -10px;
+}
+
+.contact::after{
+    display: none;
+}
+
 .bio{
     display: flex;
     flex-direction: column;
@@ -521,6 +527,38 @@ footer .social-links{
     display: flex;
     flex-direction: column;
 }
+
+.skills ul{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    font-size: 2rem;
+    column-gap: 1em;
+    margin-bottom: 5rem; 
+}
+
+/* .selected-work-img{
+    width: 60rem;
+    height: 60rem;
+} */
+
+
+}
+
+@media screen and (max-width:512px){
+    html{
+        font-size: 8px;
+    }
+    .selected-work-img{
+        max-width: 28rem;
+        height: 28rem;
+    }
+    .skills ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 2rem;
+        column-gap: -5em;
+        margin-bottom: 5rem; 
+    }
 
 }
 
@@ -570,11 +608,11 @@ footer .social-links{
     }
     
     .skills ul{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr);
         font-size: 2rem;
         column-gap: -1em;
-        margin-bottom: 5rem;
+        margin-bottom: 5rem; */
     }
   }
 
