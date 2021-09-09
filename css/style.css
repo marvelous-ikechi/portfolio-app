@@ -360,7 +360,7 @@ nav ul li a{
 }
 
 .skills ul li::before{
-    content: '\2600';
+    content: '\2013   ';
 
     
 }
