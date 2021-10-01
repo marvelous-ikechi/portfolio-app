@@ -270,7 +270,7 @@ nav ul li a{
 
 .selected-work-div{
     width:36.5rem;
-    height:36.875rem;
+    /* height:36.875rem; */
     margin-top: 4rem;
 }
 
@@ -541,7 +541,7 @@ body{
 }
 
 .selected-work-div{
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
     width: 90%;
     justify-content: center;
     align-items: center;
