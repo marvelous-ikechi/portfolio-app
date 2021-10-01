@@ -10,9 +10,11 @@ html{
 }
 
 body{
-    background-color: black; 
-    color: white; 
-    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: black !important;
+    color: white !important; 
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+    line-height: 1.5;
+    text-align: left;
     /* overflow: hidden; */
 }
 
@@ -20,10 +22,10 @@ nav{
     min-height: 6.875em;
     margin-right: 2.5em;
     color: white;
-    display: flex;
+    display: flex !important;
     max-width: 100%;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-end !important;
 }
 
 .burger-menu{
@@ -136,8 +138,8 @@ nav ul li:hover::after{
 
 
 nav ul li a{
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
    
 
     /* margin-right: 2rem; */
@@ -210,7 +212,7 @@ nav ul li a{
     top: 0px;
     left: 0;
     transform: scale(0);
-    transform-origin:left ;
+    transform-origin:center ;
 }
 
 .profile-more-btn:hover::after{
@@ -263,6 +265,7 @@ nav ul li a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 6rem;
 }
 
 .selected-work-div{
@@ -272,13 +275,14 @@ nav ul li a{
 }
 
 .selected-work-img{
-    max-height: 28.125rem;
-    max-width: 36.5rem;
+    height: 28.125rem;
+    width: 36.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    object-fit:cover;
 }
 
 .project-title{
@@ -481,6 +485,13 @@ footer .social-links{
     overflow: hidden;
    
 }
+.project-title{
+    line-height: 3rem;
+}
+
+body{
+    background-color: 'black';
+}
 
 .burger-menu{
     display: flex;
@@ -526,6 +537,19 @@ footer .social-links{
 .selected-work-container{
     display: flex;
     flex-direction: column;
+    
+}
+
+.selected-work-div{
+    margin-bottom: 10rem;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.selected-work-div p{
+    text-align: left;
 }
 
 .skills ul{
@@ -534,6 +558,12 @@ footer .social-links{
     font-size: 2rem;
     column-gap: 1em;
     margin-bottom: 5rem; 
+}
+
+.project-description{
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 3rem;
 }
 
 /* .selected-work-img{
@@ -560,6 +590,7 @@ footer .social-links{
         margin-bottom: 5rem; 
     }
 
+
 }
 
 @media screen and (max-width:1024px){
@@ -567,7 +598,7 @@ footer .social-links{
         font-size: 10px;
      }
 
-     nav{
+     .burger-menu + nav ul{
          display: none;
      }
 
@@ -578,6 +609,14 @@ footer .social-links{
      .burger-menu{
          display: flex;
      }
+
+     .burger-menu.open + nav ul{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        justify-content: space-between;
+    }
+    
 
    .profile{
         display: flex;
