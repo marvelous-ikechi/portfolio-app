@@ -560,7 +560,7 @@ body{
     font-size: 2rem;
     column-gap: 1em;
     margin-bottom: 5rem; 
-    place-items: center !important;
+    place-items: center;
 }
 
 .project-description{
@@ -591,6 +591,7 @@ body{
         font-size: 2rem;
         column-gap: -5em;
         margin-bottom: 5rem; 
+        place-items: center;
     }
 
 
