@@ -346,11 +346,21 @@ nav ul li a{
     line-height: 46px;
 }
 
+.skills{
+    /* border: solid 2px red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
 .skills ul{
     display: flex;
     flex-direction: row;
     min-width: 43.75rem;
     justify-content: space-between;
+    /* border: solid 2px red; */
+    /* margin-top: 30px; */
 }
 
 .skills ul li{
@@ -385,7 +395,7 @@ nav ul li a{
 }
 
 .contact h2{
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -395,7 +405,7 @@ nav ul li a{
 }
 
 .contact .mail{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 2.5rem;
     position: relative;
     text-decoration: none;
@@ -416,14 +426,14 @@ nav ul li a{
 /* Footer styles */
 
 footer{
-    position: relative;
-    height: 6.875rem;
-    min-height: 100%;
-    display: flex;
-    flex-direction: row;
+     position: relative;
+    /* height: 6.875rem; */
+    /* min-height: 100%; */
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem;
+    padding: 4rem; 
 }
 
 footer::before{
@@ -644,6 +654,8 @@ body{
     .skills-and-tech-div{
         flex-direction: column;
         align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
     
     .skills ul{
