@@ -337,30 +337,22 @@ nav ul li a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+ 
 }
 
 .skills-header{
-    font-size: 2.875rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 46px;
 }
 
-.skills{
-    /* border: solid 2px red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-}
+
 
 .skills ul{
     display: flex;
     flex-direction: row;
     min-width: 43.75rem;
-    justify-content: space-between;
-    /* border: solid 2px red; */
-    /* margin-top: 30px; */
 }
 
 .skills ul li{
@@ -568,6 +560,7 @@ body{
     font-size: 2rem;
     column-gap: 1em;
     margin-bottom: 5rem; 
+    place-items: center;
 }
 
 .project-description{
